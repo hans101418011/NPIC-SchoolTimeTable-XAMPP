@@ -1,4 +1,5 @@
-NPIC非官方課表查詢系統base on XAMPP (PHP 5.4) 
+NPIC非官方課表查詢系統
+base on XAMPP (PHP 5.4) 
 ========================
 
 因為原本的環境是Appserv 2.5.10
