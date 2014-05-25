@@ -1,0 +1,640 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"utf",
+				"UTF-8"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"b",
+				"background"
+			],
+			[
+				"l",
+				"label	Tag"
+			],
+			[
+				"c",
+				"cursor"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"f",
+				"font"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"s",
+				"search"
+			],
+			[
+				"incl",
+				"include"
+			],
+			[
+				"g",
+				"grade"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"v",
+				"vertical-align"
+			],
+			[
+				"n",
+				"num_td"
+			],
+			[
+				"nu",
+				"num_sect"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"num_",
+				"num_dept"
+			],
+			[
+				"td",
+				"td_21_chose"
+			],
+			[
+				"se",
+				"search_grade_conver"
+			],
+			[
+				"a",
+				"array	$… = array (…)"
+			],
+			[
+				"sect",
+				"sect_num"
+			],
+			[
+				"dep",
+				"department"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"t",
+				"td	Tag"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"o",
+				"option	Tag"
+			],
+			[
+				"mag",
+				"margin"
+			],
+			[
+				"mi",
+				"min-height"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"re",
+				"response"
+			],
+			[
+				"da",
+				"data_array"
+			],
+			[
+				"web",
+				"web_page"
+			],
+			[
+				"title",
+				"title_excl"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"p",
+				"pre	Tag"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"bc",
+				"border-color"
+			],
+			[
+				"na",
+				"navlist"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"bl",
+				"border-left"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"br",
+				"border-right"
+			],
+			[
+				"bb",
+				"border-bottom"
+			],
+			[
+				"tea",
+				"text-align"
+			],
+			[
+				"su",
+				"subaction"
+			],
+			[
+				"borc",
+				"border-color"
+			],
+			[
+				"boc",
+				"border-color"
+			],
+			[
+				"bordr",
+				"border-right"
+			],
+			[
+				"bod",
+				"border"
+			],
+			[
+				"bodb",
+				"border-bottom"
+			],
+			[
+				"bodr",
+				"border-right"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"lis",
+				"list-style"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"C",
+				"CR"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"H",
+				"HSL2RGB"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"R",
+				"C_R"
+			],
+			[
+				"if",
+				"ifelse	if … else …"
+			],
+			[
+				"m",
+				"meta	Tag"
+			],
+			[
+				"input",
+				"input_h"
+			],
+			[
+				"fo",
+				"form	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "input/input.php",
+			"settings":
+			{
+				"buffer_size": 954,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/npic_subject/input/note.txt",
+		"/C/xampp/htdocs/npic_subject/input/input.php",
+		"/C/xampp/htdocs/npic_subject/input/test/tidy-test.php",
+		"/C/xampp/htdocs/npic_subject/input/mysql-process.php",
+		"/C/xampp/htdocs/npic_subject/input/sample-ge.php",
+		"/C/xampp/htdocs/npic_subject/input/test-crash-AJ2.php",
+		"/C/xampp/htdocs/npic_subject/input/input-0-online.php",
+		"/C/xampp/htdocs/curl/input/test-sql-in.php",
+		"/C/xampp/htdocs/npic_subject/input/input-0.php",
+		"/C/xampp/htdocs/npic_subject/input/tidy-test.php",
+		"/C/xampp/htdocs/curl/input/sample/sample-AJ.htm",
+		"/C/Documents and Settings/Hans/桌面/hw3/Makefile",
+		"/C/xampp/htdocs/curl/input/input-0-online-ge.php",
+		"/C/xampp/htdocs/curl/input/input-0.php",
+		"/C/xampp/htdocs/curl/input/input-0-online-csie.php",
+		"/C/xampp/htdocs/curl/input/input-0-online.php",
+		"/C/xampp/htdocs/curl/input/sample/sample-CSIE-1.htm",
+		"/C/AppServ/www/curl/interface/enter.php",
+		"/C/Documents and Settings/Hans/My Documents/OpenTTD/openttd.cfg",
+		"/C/AppServ/www/curl/input/test-sql-in.php",
+		"/C/Documents and Settings/All Users/Application Data/AVAST Software/Avast/FileInfo2.db",
+		"/C/AppServ/www/curl/interface/class-table.php",
+		"/C/AppServ/www/curl/interface/config.php",
+		"/C/AppServ/www/curl/interface/reset.css",
+		"/C/AppServ/www/curl/input/test-crash-AJ2.php",
+		"/C/AppServ/www/curl/input/sample/sample-CSIE-utf8.htm",
+		"/C/WINDOWS/php.ini",
+		"/C/AppServ/www/curl/input/sample/sample-CSIE-1.htm",
+		"/C/AppServ/www/curl/input/test-PE.php",
+		"/C/AppServ/www/curl/input/sample/sample-PE.htm",
+		"/C/AppServ/www/curl/input/sample/sample-Society.htm",
+		"/C/AppServ/www/curl/input/sample/sample-AJ.htm",
+		"/C/AppServ/www/curl/input/_LIB_http/LIB_http.php",
+		"/C/AppServ/www/curl/input/test-link-server.php",
+		"/C/AppServ/www/curl/input/temp-0.php",
+		"/C/AppServ/www/curl/input/temp-2.php",
+		"/C/AppServ/www/curl/input/test-Society.php",
+		"/C/AppServ/www/curl/input/_LIB_http/LIB_http_codes.php",
+		"/C/AppServ/www/curl/input/test-array.php",
+		"/C/AppServ/www/curl/input/sample/search.html",
+		"/C/AppServ/www/curl/input/temp-1.php",
+		"/C/AppServ/www/curl/input/test-sql-in-evening.php",
+		"/C/AppServ/www/curl/input/test-sql-in-GE.php",
+		"/C/AppServ/www/curl/input/test-sql-in-master.php",
+		"/C/AppServ/www/curl/input/note.txt",
+		"/C/AppServ/www/curl/input/test-sql-receive.php",
+		"/C/AppServ/www/curl/input/test-sql-in-institute.php",
+		"/C/AppServ/www/curl/input/test-sql-in-day.php",
+		"/C/AppServ/www/curl/input/config.php",
+		"/C/AppServ/www/curl/input/input-0-online.php",
+		"/C/AppServ/www/curl/input/sample/search.asp",
+		"/C/Documents and Settings/Hans/Application Data/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/AppServ/www/curl/input/test-sql-in-base.php",
+		"/C/AppServ/www/curl/input/sample-ge.php",
+		"/C/AppServ/www/curl/input/test2.php",
+		"/C/AppServ/www/curl/input/mysql-process.php",
+		"/C/AppServ/www/curl/input/input-0.php",
+		"/C/AppServ/www/curl/input/input-0-online-ge.php",
+		"/C/AppServ/www/curl/input/input-0-online-csie.php",
+		"/C/AppServ/www/curl/input/index2.php",
+		"/C/AppServ/www/curl/input/index3.php",
+		"/C/AppServ/www/curl/input/index.php",
+		"/C/AppServ/www/curl/input/process.php",
+		"/C/AppServ/www/curl/input/test.php",
+		"/C/AppServ/www/curl/input/confidential/config.php",
+		"/C/AppServ/www/curl/input/confidential/test-sql-in.php",
+		"/C/AppServ/www/curl/input/confidential/test-sql-receive.php",
+		"/C/AppServ/www/curl/input/confidential/test-sql-in-base.php",
+		"/C/AppServ/www/curl/input/confidential/test-sql.php",
+		"/C/AppServ/www/curl/test.php",
+		"/C/AppServ/www/curl/input-0-online-csie.php",
+		"/C/AppServ/www/curl/config.php",
+		"/C/AppServ/www/curl/test-sql-in.php",
+		"/C/AppServ/www/curl/test-sql.php",
+		"/C/Documents and Settings/Hans/My Documents/GitHub/npic-SchoolTimeTable-php/.gitignore",
+		"/C/Documents and Settings/Hans/My Documents/GitHub/npic-schoolTimetable/schoolTimetable-0.1.js",
+		"/C/Program Files/iSkysoft/iTube Studio/Log/MMPDecLog.mdmp",
+		"/C/Program Files/iSkysoft/iTube Studio/Log/MMPDecLog.txt",
+		"/C/AppServ/www/curl/test2.php",
+		"/C/AppServ/www/Zymic/data/test.php",
+		"/C/WINDOWS/notepad.exe",
+		"/C/AppServ/www/curl/process.php",
+		"/C/AppServ/www/curl/index3.php",
+		"/C/AppServ/www/curl/base.css",
+		"/C/AppServ/www/curl/enter.php",
+		"/C/AppServ/www/curl/index2.php",
+		"/C/AppServ/www/curl/_LIB_http/LIB_parse.php",
+		"/C/AppServ/www/curl/_LIB_http/LIB_http.php",
+		"/C/AppServ/www/curl/index.php",
+		"/C/AppServ/www/example/config.php",
+		"/C/AppServ/www/example/process.php",
+		"/G/Hans file/Web Design/bootstrap-3.0.0-wip/_includes/nav-css.html",
+		"/C/AppServ/www/curl/reset.css",
+		"/C/AppServ/www/curl/test_b5.html",
+		"/C/AppServ/www/curl/search.html",
+		"/C/AppServ/www/curl/LISTING_5_10.php",
+		"/C/AppServ/www/ihost/index.php",
+		"/C/AppServ/www/ihost/_footer.php",
+		"/C/AppServ/www/ihost/_header.php",
+		"/C/AppServ/www/ihost/base.css",
+		"/C/AppServ/www/ihost/information.php",
+		"/C/AppServ/www/ihost/config.php",
+		"/C/AppServ/www/ihost/head.php",
+		"/C/AppServ/www/Zymic/link.php",
+		"/C/AppServ/www/Zymic/web_design.php",
+		"/C/AppServ/www/Zymic/sitemap.php",
+		"/C/AppServ/www/Zymic/learn.php",
+		"/C/AppServ/www/Zymic/index.php",
+		"/C/AppServ/www/Zymic/history.php",
+		"/C/AppServ/www/Zymic/ie6_only.php",
+		"/C/AppServ/www/Zymic/flash.php",
+		"/C/AppServ/www/Zymic/about_web.php",
+		"/C/AppServ/www/Zymic/browser.php",
+		"/C/AppServ/www/Zymic/link.css",
+		"/C/AppServ/www/Zymic/about_hans.php",
+		"/C/AppServ/www/Zymic/web_design.css",
+		"/C/AppServ/www/Zymic/base.css",
+		"/C/AppServ/www/Zymic/history.css",
+		"/C/AppServ/www/Zymic/about_web.css",
+		"/C/AppServ/www/Zymic/about_hans.css",
+		"/C/AppServ/www/ihost/bw.php",
+		"/C/AppServ/www/ihost/browser.php",
+		"/C/AppServ/www/ihost/q.php",
+		"/C/AppServ/www/example/query.php",
+		"/C/AppServ/www/download/index.php",
+		"/C/AppServ/Apache2.2/conf/httpd.conf",
+		"/C/AppServ/www/school-web/index.html",
+		"/C/AppServ/www/ihost/cmd.txt"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"$td_yc",
+			"$td_21_chose",
+			"td21_PE",
+			"$td_21_chose",
+			"$td_21_chose=\"\";",
+			"$td_21_chose",
+			"$td_21_S",
+			"$td_21_chose",
+			"$td_21_S",
+			"td_yc",
+			".'\",",
+			"\"'.",
+			".\"",
+			"\".",
+			"\"','\"",
+			"'",
+			"timezone",
+			"高",
+			"$in_l",
+			"$in_s",
+			"$in_h",
+			"$h",
+			".\")\");"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			".\"',",
+			"'\".",
+			"",
+			"\",\"",
+			"\"",
+			"$CL",
+			"$CS",
+			"$CH",
+			"$in_h"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "input/input.php",
+					"settings":
+					{
+						"buffer_size": 954,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 163.0,
+	"status_bar_visible": true
+}
