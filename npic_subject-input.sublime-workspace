@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"td",
+				"td_tag_array"
+			],
+			[
+				"num",
+				"num_tr"
+			],
+			[
+				"n",
+				"num_td"
+			],
+			[
+				"ti",
+				"tidy"
+			],
+			[
 				"utf",
 				"UTF-8"
 			],
@@ -64,10 +80,6 @@
 				"vertical-align"
 			],
 			[
-				"n",
-				"num_td"
-			],
-			[
 				"nu",
 				"num_sect"
 			],
@@ -78,10 +90,6 @@
 			[
 				"num_",
 				"num_dept"
-			],
-			[
-				"td",
-				"td_21_chose"
 			],
 			[
 				"se",
@@ -158,10 +166,6 @@
 			[
 				"title",
 				"title_excl"
-			],
-			[
-				"ti",
-				"title"
 			],
 			[
 				"p",
@@ -307,7 +311,47 @@
 			"file": "input/input.php",
 			"settings":
 			{
-				"buffer_size": 954,
+				"buffer_size": 2824,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "input/function.php",
+			"settings":
+			{
+				"buffer_size": 557,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "input/test/form_analyzer.php",
+			"settings":
+			{
+				"buffer_size": 360,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "input/test/test-sql-in.php",
+			"settings":
+			{
+				"buffer_size": 9385,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "input/test/test-crash-AJ2.php",
+			"settings":
+			{
+				"buffer_size": 8722,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "input/test/tidy-test.php",
+			"settings":
+			{
+				"buffer_size": 473,
 				"line_ending": "Windows"
 			}
 		}
@@ -352,6 +396,11 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/npic_subject/README.md",
+		"/C/xampp/htdocs/npic_subject/input/test/_LIB_http/LIB_http.php",
+		"/C/xampp/htdocs/npic_subject/input/_LIB_http/LIB_http.php",
+		"/C/xampp/htdocs/npic_subject/input/test/form_analyzer.php",
+		"/C/xampp/htdocs/curl/input/_LIB_http/LIB_http_codes.php",
 		"/C/xampp/htdocs/npic_subject/input/note.txt",
 		"/C/xampp/htdocs/npic_subject/input/input.php",
 		"/C/xampp/htdocs/npic_subject/input/test/tidy-test.php",
@@ -474,12 +523,7 @@
 		"/C/AppServ/www/Zymic/about_hans.css",
 		"/C/AppServ/www/ihost/bw.php",
 		"/C/AppServ/www/ihost/browser.php",
-		"/C/AppServ/www/ihost/q.php",
-		"/C/AppServ/www/example/query.php",
-		"/C/AppServ/www/download/index.php",
-		"/C/AppServ/Apache2.2/conf/httpd.conf",
-		"/C/AppServ/www/school-web/index.html",
-		"/C/AppServ/www/ihost/cmd.txt"
+		"/C/AppServ/www/ihost/q.php"
 	],
 	"find":
 	{
@@ -554,21 +598,156 @@
 					"file": "input/input.php",
 					"settings":
 					{
-						"buffer_size": 954,
+						"buffer_size": 2824,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2215,
+								2215
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 684.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "input/function.php",
+					"settings":
+					{
+						"buffer_size": 557,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								551,
+								551
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "input/test/form_analyzer.php",
+					"settings":
+					{
+						"buffer_size": 360,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								357,
+								357
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "input/test/test-sql-in.php",
+					"settings":
+					{
+						"buffer_size": 9385,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3363,
+								3363
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2092.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "input/test/test-crash-AJ2.php",
+					"settings":
+					{
+						"buffer_size": 8722,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6075,
+								5750
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2458.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "input/test/tidy-test.php",
+					"settings":
+					{
+						"buffer_size": 473,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								437,
+								437
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

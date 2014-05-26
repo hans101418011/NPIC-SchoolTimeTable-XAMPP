@@ -10,6 +10,7 @@
 	include("_LIB_http/LIB_parse.php");
 	include("config.php");
 	$total_tr=0;
+
 /*---------------------------------------------------
 利用cURL模擬檢索通識課取得結果
 ----------------------------------------------------*/
@@ -43,19 +44,12 @@
 				$data_array["sect"] = iconv("UTF-8","big5",$data_array["sect"]);
 				$data_array["grade"] = iconv("UTF-8","big5",$data_array["grade"]);
 				
-
+				$ref="";
 				$target = "http://127.0.0.1/curl/input/sample/sample-AJ.htm";
 				$web_page = http_get($target,$ref);
 				//$web_page['FILE']=iconv("big5","UTF-8",$web_page['FILE']); 
 				$web_page['FILE'] = mb_convert_encoding($web_page['FILE'],"UTF-8","big5");
 
-				/*
-				$action = "http://webs3.npic.edu.tw/selectn/clist.asp";
-				$ref = "http://webs3.npic.edu.tw/selectn/search.asp";
-				$method="POST";
-				$response = http($target=$action,$ref,$method,$data_array,EXCL_HEAD);
-				$web_page['FILE']=iconv("big5","UTF-8",$response['FILE']); 
-				*/
 		/*---------------------------------------------------
 			處理取得的網頁資料
 		----------------------------------------------------*/
@@ -70,7 +64,7 @@
 						$td_tag_array[$num_td]=str_replace("<TD>" , "" , $td_tag_array[$num_td]);	//將td標籤去掉
 						$td_tag_array[$num_td]=str_replace("</TD>" , "" , $td_tag_array[$num_td]);	
 						$td_tag_array[$num_td]=Noformat($td_tag_array[$num_td]);	//將td裡的多餘空白換行等格式去掉
-
+						$td_21_chose="";
 						if($num_td==9)
 						{
 							$td_tag_array[$num_td] = str_replace("?" , "劄" , $td_tag_array[$num_td]);
@@ -152,13 +146,6 @@
 					);
 
 					print_r($input_data_array);
-					/*
-					$action = "http://127.0.0.1/curl/input/test-sql-receive.php";
-					$ref = "http://127.0.0.1";
-					$method="POST";
-					$response = http($target=$action,$ref,$method,$input_data_array,EXCL_HEAD);
-					echo($response['FILE']);
-					*/
 					unset($td_21_chose);
 				}
 
