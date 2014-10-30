@@ -1,12 +1,15 @@
 <!doctype html>
 <?php
 	include("config.php");
-	$department = $_GET["department"];
-	$grade = $_GET["grade"];
-
-	$temp = explode("-",$department);
-	$institution = $temp[0];
-	$department = $temp[1];
+	if(isset($_GET["department"])){
+		$department = $_GET["department"];
+		$temp = explode("-",$department);
+		$institution = $temp[0];
+		$department = $temp[1];
+	}
+	if(isset($_GET["grade"])){
+		$grade = $_GET["grade"];
+	}
 
 
 	$q_inst = array(

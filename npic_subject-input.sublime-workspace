@@ -359,15 +359,15 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 311.0,
 		"selected_items":
 		[
 			[
-				"ins",
+				"Package Control: ",
 				"Package Control: Install Package"
 			],
 			[
-				"Package Control: ",
+				"ins",
 				"Package Control: Install Package"
 			],
 			[
@@ -379,7 +379,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 464.0
+		"width": 400.0
 	},
 	"console":
 	{
@@ -396,6 +396,10 @@
 	},
 	"file_history":
 	[
+		"/C/Documents and Settings/Hans/桌面/hw3/dataGetter.cpp",
+		"/C/3M.pdf",
+		"//Pc-athlonx2/U-700G/Hans Paper/Backup-codes-hans5300609.txt",
+		"/F/Web Design/Template/QuickSite-Responsive-Template/readme.txt",
 		"/C/xampp/htdocs/npic_subject/README.md",
 		"/C/xampp/htdocs/npic_subject/input/test/_LIB_http/LIB_http.php",
 		"/C/xampp/htdocs/npic_subject/input/_LIB_http/LIB_http.php",
@@ -519,11 +523,7 @@
 		"/C/AppServ/www/Zymic/web_design.css",
 		"/C/AppServ/www/Zymic/base.css",
 		"/C/AppServ/www/Zymic/history.css",
-		"/C/AppServ/www/Zymic/about_web.css",
-		"/C/AppServ/www/Zymic/about_hans.css",
-		"/C/AppServ/www/ihost/bw.php",
-		"/C/AppServ/www/ihost/browser.php",
-		"/C/AppServ/www/ihost/q.php"
+		"/C/AppServ/www/Zymic/about_web.css"
 	],
 	"find":
 	{
@@ -616,7 +616,7 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 684.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -639,7 +639,8 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

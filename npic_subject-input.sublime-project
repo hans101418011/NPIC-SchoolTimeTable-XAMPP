@@ -3,6 +3,9 @@
 	[
 		{
 			"path": "input"
+		},
+		{
+			"path": "interface"
 		}
 	]
 }
