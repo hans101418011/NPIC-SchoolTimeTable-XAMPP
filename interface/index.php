@@ -206,8 +206,8 @@
 		</div>
 		<footer>
 			本站最佳解析度為 1024*768 以上<br />最佳瀏覽器為&nbsp;
-			<a href="http://moztw.org/firefox/" title="下載最新Firefox" target="_blank" rel="external">Firefox 3↑</a>&nbsp;
-			<a href="http://www.google.com/chrome/" title="下載最新Chrome" target="_blank" rel="external">Chrome 9↑</a>&nbsp;
+			<a href="http://moztw.org/firefox/" title="下載最新Firefox" target="_blank" rel="external">Firefox 33↑</a>&nbsp;
+			<a href="http://www.google.com/chrome/" title="下載最新Chrome" target="_blank" rel="external">Chrome 39↑</a>&nbsp;
 			<a href="http://www.opera.com/download/" title="下載最新Opera" target="_blank" rel="external">Opera 11↑</a><br />
 			Copyright&copy;2013&nbsp;Some&nbsp;Rights&nbsp;Reserved<br />
 			Web&nbsp;Design&nbsp;by&nbsp;CSIE&nbsp;Hans
