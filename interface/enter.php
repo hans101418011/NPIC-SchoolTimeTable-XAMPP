@@ -20,10 +20,10 @@
 		'e' => "夜四技" 
 	);
 	$q_grade = array(
-		'1' => "102", 
-		'2' => "101", 
-		'3' => "100", 
-		'4' => "99"
+		'1' => "103", 
+		'2' => "102", 
+		'3' => "101", 
+		'4' => "100"
 	);
 	$q_dept = array(
 		'GE' => "通識",
@@ -64,7 +64,7 @@
 		<header>
 			<hgroup>
 				<h1>非官方課程查詢系統</h1>
-				<h2>102學年度 上學期</h2>
+				<h2>103學年度 上學期</h2>
 			</hgroup>
 		</header>
 		<div id="search">
@@ -134,7 +134,7 @@
 				</label>
 				<input type="hidden" name="query" value="true">
 				<input class="bt" name="sent" type="submit" value="查詢">
-				<a href="enter.php" class="bt" id="reset">清除</a>
+				<a href="#" class="bt" id="reset">清除</a>
 				<!--<input class="bt" name="reset" type="reset" value="清除">-->
 			</form>
 		</div>
@@ -182,7 +182,7 @@
 			<a href="http://moztw.org/firefox/" title="下載最新Firefox" target="_blank" rel="external">Firefox 3↑</a>&nbsp;
 			<a href="http://www.google.com/chrome/" title="下載最新Chrome" target="_blank" rel="external">Chrome 9↑</a>&nbsp;
 			<a href="http://www.opera.com/download/" title="下載最新Opera" target="_blank" rel="external">Opera 11↑</a><br />
-			Copyright&copy;2013&nbsp;Some&nbsp;Rights&nbsp;Reserved<br />
+			Copyright&copy;2013-2014&nbsp;Some&nbsp;Rights&nbsp;Reserved<br />
 			Web&nbsp;Design&nbsp;by&nbsp;CSIE&nbsp;Hans
 		</footer>
 	</body>
