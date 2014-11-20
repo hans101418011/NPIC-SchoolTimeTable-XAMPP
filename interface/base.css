@@ -56,6 +56,46 @@ header h2{
 #search form #reset{
 	padding: 7px 9px;
 }
+
+
+#insert{
+	clear: both;
+	padding: 20px;
+}
+#insert table{
+	margin: 0 auto;
+	text-align: left;
+	border: solid 1px hsl(0,0%,0%);
+}
+#insert table tr:hover{
+	background-color: hsla(0,0%,100%,0.5);
+}
+#insert table tr.directions:hover{
+	background-color: hsla(0,0%,100%,0.5);
+}
+#insert table td{
+	border: solid 1px hsl(0,0%,0%);
+	padding: 4px;
+	vertical-align: middle;
+}
+#insert table input {
+	margin: 5px;
+}
+#insert table select {
+	margin: 5px;
+}
+#insert table input.longInput{
+	width: 300px;
+}
+#insert table input.numInput{
+	text-align: right;
+	width: 60px;
+}
+#insert table input.sortInput{
+	width: 30px;
+}
+
+
 #result{
 	background-color: hsl(190,100%,90%);
 }

@@ -43,7 +43,7 @@
 
 	$data_array = array("dept"=>"", "sect"=>"", "grade"=>"", "cscn"=>"", "thname"=>"", "dayinweek"=>"", "selnscode"=>"", "periods"=>"", "room"=>"");
 	echo "<table>\n";
-	for($num_dept=5;$num_dept<count($search_dept);$num_dept++)
+	for($num_dept=0;$num_dept<count($search_dept);$num_dept++)
 	{
 		for($num_sect=0;$num_sect<count($search_sect[$num_dept]);$num_sect++)
 		{
@@ -160,7 +160,7 @@
 						"chose"=>$td_21_chose,
 						"user"=>Config_Passwd
 					);
-					$action = "http://127.0.0.1/curl/input/test-sql-receive.php";
+					$action = "http://127.0.0.1/npic_subject/input/test/test-sql-receive.php";
 					$ref = "http://127.0.0.1";
 					$method="POST";
 					$response = http($target=$action,$ref,$method,$input_data_array,EXCL_HEAD);

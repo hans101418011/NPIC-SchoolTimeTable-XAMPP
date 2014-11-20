@@ -134,7 +134,7 @@
 				</label>
 				<input type="hidden" name="query" value="true">
 				<input class="bt" name="sent" type="submit" value="查詢">
-				<a href="#" class="bt" id="reset">清除</a>
+				<a href="enter.php" class="bt" id="reset">清除</a>
 				<!--<input class="bt" name="reset" type="reset" value="清除">-->
 			</form>
 		</div>

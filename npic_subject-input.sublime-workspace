@@ -335,15 +335,15 @@
 			"file": "input/test/test-sql-in.php",
 			"settings":
 			{
-				"buffer_size": 9385,
+				"buffer_size": 9398,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "input/test/test-crash-AJ2.php",
+			"file": "input/test/test-sql-receive.php",
 			"settings":
 			{
-				"buffer_size": 8722,
+				"buffer_size": 2331,
 				"line_ending": "Windows"
 			}
 		},
@@ -352,6 +352,14 @@
 			"settings":
 			{
 				"buffer_size": 473,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "interface/enter.php",
+			"settings":
+			{
+				"buffer_size": 5420,
 				"line_ending": "Windows"
 			}
 		}
@@ -396,6 +404,10 @@
 	},
 	"file_history":
 	[
+		"/C/Documents and Settings/Hans/My Documents/Downloads/subject.sql",
+		"/C/xampp/htdocs/npic_subject/input/test/test-crash-AJ2.php",
+		"/C/xampp/htdocs/npic_subject/interface/_class_list.php",
+		"/C/xampp/htdocs/npic_subject/input/test/_LIB_http/LIB_parse.php",
 		"/C/Documents and Settings/Hans/桌面/hw3/dataGetter.cpp",
 		"/C/3M.pdf",
 		"//Pc-athlonx2/U-700G/Hans Paper/Backup-codes-hans5300609.txt",
@@ -519,11 +531,7 @@
 		"/C/AppServ/www/Zymic/about_web.php",
 		"/C/AppServ/www/Zymic/browser.php",
 		"/C/AppServ/www/Zymic/link.css",
-		"/C/AppServ/www/Zymic/about_hans.php",
-		"/C/AppServ/www/Zymic/web_design.css",
-		"/C/AppServ/www/Zymic/base.css",
-		"/C/AppServ/www/Zymic/history.css",
-		"/C/AppServ/www/Zymic/about_web.css"
+		"/C/AppServ/www/Zymic/about_hans.php"
 	],
 	"find":
 	{
@@ -590,7 +598,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -680,15 +688,15 @@
 					"file": "input/test/test-sql-in.php",
 					"settings":
 					{
-						"buffer_size": 9385,
+						"buffer_size": 9398,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3363,
-								3363
+								5892,
+								5892
 							]
 						],
 						"settings":
@@ -698,25 +706,25 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2092.0,
+						"translation.y": 2340.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "input/test/test-crash-AJ2.php",
+					"file": "input/test/test-sql-receive.php",
 					"settings":
 					{
-						"buffer_size": 8722,
+						"buffer_size": 2331,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6075,
-								5750
+								0,
+								0
 							]
 						],
 						"settings":
@@ -725,7 +733,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2458.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -749,6 +757,33 @@
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "interface/enter.php",
+					"settings":
+					{
+						"buffer_size": 5420,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4297,
+								4297
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -815,6 +850,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 163.0,
+	"side_bar_width": 232.0,
 	"status_bar_visible": true
 }
