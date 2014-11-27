@@ -1,24 +1,56 @@
 <!doctype html>
 <?php
 	include("config.php");
-	$_POST["name"]=isset($_POST["name"])?$_POST["name"]:Null;
-	$_POST["sort"]=isset($_POST["sort"])?$_POST["sort"]:Null;
-	$_POST["elective"]=isset($_POST["elective"])?$_POST["elective"]:Null;
-	$_POST["credit"]=isset($_POST["credit"])?$_POST["credit"]:Null;
-	$_POST["class"]=isset($_POST["class"])?$_POST["class"]:Null;
-	$_POST["teacher"]=isset($_POST["teacher"])?$_POST["teacher"]:Null;
-	$_POST["monday"]=isset($_POST["monday"])?$_POST["monday"]:Null;
-	$_POST["tuesday"]=isset($_POST["tuesday"])?$_POST["tuesday"]:Null;
-	$_POST["wednesday"]=isset($_POST["wednesday"])?$_POST["wednesday"]:Null;
-	$_POST["thursday"]=isset($_POST["thursday"])?$_POST["thursday"]:Null;
-	$_POST["friday"]=isset($_POST["friday"])?$_POST["friday"]:Null;
-	$_POST["saturday"]=isset($_POST["saturday"])?$_POST["saturday"]:Null;
-	$_POST["sunday"]=isset($_POST["sunday"])?$_POST["sunday"]:Null;
-	$_POST["room"]=isset($_POST["room"])?$_POST["room"]:Null;
-	$_POST["web"]=isset($_POST["web"])?$_POST["web"]:Null;
-	$_POST["max"]=isset($_POST["max"])?$_POST["max"]:Null;
-	$_POST["annex"]=isset($_POST["annex"])?$_POST["annex"]:Null;
-	$_POST["other"]=isset($_POST["other"])?$_POST["other"]:Null;
+	if(isset($_GET["department"])){
+		$department = $_GET["department"];
+		$temp = explode("-",$department);
+		$institution = $temp[0];
+		$department = $temp[1];
+	}
+	if(isset($_GET["grade"])){
+		$grade = $_GET["grade"];
+	}
+
+
+	$q_inst = array(
+		'o' => "產學專班", 
+		'i' => "碩專班", 
+		'p' => "研究所", 
+		'd' => "四年制",
+		'e' => "夜四技" 
+	);
+	$q_grade = array(
+		'1' => "103", 
+		'2' => "102", 
+		'3' => "101", 
+		'4' => "100"
+	);
+	$q_dept = array(
+		'GE' => "通識",
+		'AJ' => "應日",
+		'BA' => "企管",
+		'DAE' => "應英",
+		'MDM' => "行銷",
+		'CAM' => "商管",
+		'COM' => "電通",
+		'MIS' => "資管",
+		'REM' => "不動",
+		'CSIE' => "資工",
+		'Acco' => "會計",
+		'Trade' => "國貿",
+		'Finance' => "財金",
+		'Leisure' => "休閒"
+	);
+	if($institution=="i"||$institution=="o"||$institution=="p")
+	{
+		$q_dept['BA'] = "經管";
+		$q_dept['CAM'] = "企電";
+		$q_dept['Trade'] = "國企";
+		$q_dept['Leisure'] = "休創";
+	}
+
+	
+
 ?>
 <html>
 	<head>
@@ -32,122 +64,87 @@
 		<header>
 			<hgroup>
 				<h1>非官方課程查詢系統</h1>
-				<h2>102學年度 上學期</h2>
+				<h2>103學年度 上學期</h2>
 			</hgroup>
 		</header>
-		<div>
-			<?php
-				if(isset($_POST["name"])){
-					$fp=fopen("sn.txt", "r");
-	                                $sn = fgets($fp);
-	                                fclose($fp);
-                                	$sn=(int)$sn+1;
-                                	$sn=str_pad($sn,6,"0",STR_PAD_LEFT);
-					$sql= "INSERT INTO `subject` (
-						`sn`, 
-						`name`, 
-						`sort`, 
-						`elective`, 
-						`credit`, 
-						`semester`, 
-						`institution`, 
-						`department`, 
-						`class`, 
-						`teacher`, 
-						`monday`, 
-						`tuesday`, 
-						`wednesday`, 
-						`thursday`, 
-						`friday`, 
-						`saturday`, 
-						`sunday`, 
-						`student`, 
-						`room`, 
-						`web`, 
-						`annex`, 
-						`max`, 
-						`limitST`, 
-						`other`, 
-						`chose`
-						) VALUES (
-						'".$sn."',
-						'".$_POST["name"]."',
-						'".$_POST['sort']."',
-						'".$_POST['elective']."',
-						'".$_POST['credit']."',
-						'1',
-						'1',
-						'".$_POST["class"]."',
-						'".$_POST["class"]."',
-						'".$_POST["teacher"]."',
-						'".$_POST["monday"]."',
-						'".$_POST["tuesday"]."',
-						'".$_POST["wednesday"]."',
-						'".$_POST["thursday"]."',
-						'".$_POST["friday"]."',
-						'".$_POST["saturday"]."',
-						'".$_POST["sunday"]."',
-						'"."0"."',
-						'".$_POST["room"]."',
-						'".$_POST["web"]."',
-						'".$_POST["annex"]."',
-						'".$_POST["max"]."',
-						'".$_POST["max"]."',
-						'".$_POST["other"]."',
-						Null);";
-
-					$fp=fopen("sn.txt", "w");
-					fwrite($fp,$sn);
-					fclose($fp);
-					mysql_query($sql,$link) or die("寫入錯誤!\n".mysql_error()."<br>");
-				}else if(isset($_GET['delete'])){
-                                        $sql="DELETE FROM `subject` WHERE `sn` = '".$_GET['delete']."'";
-                                        mysql_query($sql,$link) or die("刪除錯誤!\n".mysql_error()."<br>");
-                                }			
-			?>
-		</div>
-		<div id="insert">
-			<form name="insert" method="post" action="">
-				<table>
-					<thead></thead>
-					<tbody>
-						<tr><td colspan="3">通識領域<select id="sort" name="sort">
-							<option value="">Null</option>
-							<option value="人文">人文</option>
-							<option value="自然">自然</option>
-							<option value="社會">社會</option>
-						</select></td>
-						<td colspan="4">課程名稱<input type="text" id="name" name="name"></td></tr>
-						<tr><td colspan="3">必選修<select id="elective" name="elective">
-							<option value="必修">必修</option>
-							<option value="選修">選修</option>
-						</select></td>
-						<td colspan="4">學分<input type="number" id="credit" name="credit" class="numInput" min="0" max="3" value="3"></td></tr>
-						<tr><td colspan="7">開課年班<input type="text" id="class" name="class" placeholder="ex:101資工"></td></tr>
-						<tr><td colspan="7">教授<input type="text" id="teacher" name="teacher"></td></tr>
-
-						<tr><td colspan="7">上課時間</td></tr>
-						<tr><td>週一</td><td>週二</td><td>週三</td><td>週四</td><td>週五</td><td>週六</td><td>週日</td></tr>
-						<tr><td><input type="text" id="monday" name="monday" class="sortInput" placeholder="ex:23"></td>
-							<td><input type="text" id="tuesday" name="tuesday" class="sortInput"></td>
-							<td><input type="text" id="wednesday" name="wednesday" class="sortInput"></td>
-							<td><input type="text" id="thursday" name="thursday" class="sortInput"></td>
-							<td><input type="text" id="friday" name="friday" class="sortInput"></td>
-							<td><input type="text" id="saturday" name="saturday" class="sortInput"></td>
-							<td><input type="text" id="sunday" name="sunday" class="sortInput"></td></tr>
-
-						<tr><td colspan="4">教室<input type="text" id="room" name="room"></td>
-							<td colspan="3">選課限額<input type="number" id="max" name="max" class="numInput" max="80" min="25" value="60"></td>
-						</tr>
-						<tr><td colspan="7">教學網站<input type="text" id="web" name="web" class="longInput"></td></tr>
-						<tr><td colspan="7">教學附件<input type="text" id="annex" name="annex" class="longInput"></td></tr>
-						<tr><td colspan="7">備註<input type="text" id="other" name="other" class="longInput"></td></tr>
-						<tr><td colspan="7"><input type="submit" value="新增課程"><input type="reset" value="重新填寫"></td></tr>
-					</tbody>
-				</table>
+		<div id="search">
+			<form name="search" method="get" action="<?=$_SERVER['self']?>"> <!--
+				年制
+				<select name="institution">
+					<option>All</option>
+					<option value="industry">產學專班</option>
+					<option value="industry">碩專班</option>
+					<option value="daytime">日四技</option>
+					<option value="evening">夜四技</option>
+					<option value="postgraduate">研究所</option>
+				</select> -->
+				<label>系所
+					<select name="department">
+						<option value="">All</option>
+						<option value="-GE">通識教育中心</option>
+						<optgroup label="產學專班">
+							<option value="o-MDM">行銷與流通管理系</option>
+						</optgroup>
+						<optgroup label="碩專班">
+							<option value="i-Trade">國際企業研究所</option>
+						</optgroup>
+						<optgroup label="研究所">
+							<option value="p-Trade">國際企業研究所</option>
+							<option value="p-Finance">財務金融研究所</option>
+							<option value="p-BA">經營管理研究所</option>
+							<option value="p-CAM">企業電子化研究所</option>
+							<option value="p-Leisure">休閒遊憩與創意產業管理研究所</option>
+							<option value="p-MDM">行銷與流通管理研究所</option>
+							<option value="p-REM">不動產經營研究所</option>
+							<option value="p-MIS">資訊管理研究所</option>
+							<option value="p-CSIE">資訊工程研究所</option>
+							<option value="p-DAE">應用英語研究所</option>
+						</optgroup>
+						<optgroup label="日四技">
+							<option value="d-Trade">國際貿易系</option>
+							<option value="d-Finance">財務金融系</option>
+							<option value="d-Acco">會計系</option>
+							<option value="d-BA">企業管理系</option>
+							<option value="d-REM">不動產經營系</option>
+							<option value="d-Leisure">休閒事業經營系</option>
+							<option value="d-MDM">行銷與流通管理系</option>
+							<option value="d-CAM">商業自動化與管理系</option>
+							<option value="d-MIS">資訊管理系</option>
+							<option value="d-CSIE">資訊工程系</option>
+							<option value="d-COM">電腦與通訊系</option>
+							<option value="d-DAE">應用英語系</option>
+							<option value="d-AJ">應用日語系</option>
+						</optgroup>
+						<optgroup label="夜四技">
+							<option value="e-Trade">國際貿易系</option>
+							<option value="e-BA">企業管理系</option>
+							<option value="e-Finance">財務金融系</option>
+							<option value="e-MIS">資訊管理系</option>
+						</optgroup>
+					</select>
+				</label>
+				<label>年級
+					<select name="grade">
+						<option value="">All</option>
+						<option value="1">一</option>
+						<option value="2">二</option>
+						<option value="3">三</option>
+						<option value="4">四</option>
+					</select>
+				</label>
+				<input type="hidden" name="query" value="true">
+				<input class="bt" name="sent" type="submit" value="查詢">
+				<a href="index.php" class="bt" id="reset">清除</a>
+				<!--<input class="bt" name="reset" type="reset" value="清除">-->
 			</form>
 		</div>
 		<div id="result">
+			<?php
+			if(($_GET["grade"]!="")&&($_GET["department"]!=""))
+			{
+				include("_class_table.php");
+			}
+			?>
 			<div id="list">
 				<table>
 					<thead></thead>
@@ -171,34 +168,10 @@
 							<td>一</td><td>二</td><td>三</td><td>四</td><td>五</td><td>六</td><td>日</td>
 						</tr>
 						<?php
-							$sql = 'SELECT * FROM `subject` ORDER BY `sn` ASC LIMIT 0, 30 ';
-							$result = mysql_query($sql,$link);
-							while($data=mysql_fetch_assoc($result)):
-						?>
-								<tr id="<?=$data['sn']?>">
-										<td class="sort"><?=$data['sort']?></td>
-										<td class="name"><?=$data['name']?></td>
-										<td class="elec"><?=$data['elective']?></td>
-										<td class="cred"><?=$data['credit']?></td>
-										<td class="clas"><?=$data['class']?></td>
-										<td class="teac"><?=$data['teacher']?></td>
-										<td class="mon"><?=$data['monday']?></td>
-										<td class="tue"><?=$data['tuesday']?></td>
-										<td class="wed"><?=$data['wednesday']?></td>
-										<td class="thu"><?=$data['thursday']?></td>
-										<td class="fri"><?=$data['friday']?></td>
-										<td class="sat"><?=$data['saturday']?></td>
-										<td class="sun"><?=$data['sunday']?></td>
-										<td class="room"><?=$data['room']?></td>
-										<td class="stud"><?=$data['student']?></td>
-										<td class="max"><?=$data['max']?></td>
-										<td class="web"><?=$data['web']?></td>
-										<td class="anne"><?=$data['annex']?></td>
-										<td class="othe"><?=$data['other']?></td>
-										<td><a href="./index.php?delete=<?=$data['sn']?>">Delete</a></td>
-								</tr>
-						<?php
-							endwhile;
+						if($_GET["query"]==true)
+						{
+							include("_class_list.php");
+						}
 						?>
 					</tbody>
 				</table>
@@ -206,10 +179,10 @@
 		</div>
 		<footer>
 			本站最佳解析度為 1024*768 以上<br />最佳瀏覽器為&nbsp;
-			<a href="http://moztw.org/firefox/" title="下載最新Firefox" target="_blank" rel="external">Firefox 33↑</a>&nbsp;
-			<a href="http://www.google.com/chrome/" title="下載最新Chrome" target="_blank" rel="external">Chrome 39↑</a>&nbsp;
+			<a href="http://moztw.org/firefox/" title="下載最新Firefox" target="_blank" rel="external">Firefox 3↑</a>&nbsp;
+			<a href="http://www.google.com/chrome/" title="下載最新Chrome" target="_blank" rel="external">Chrome 9↑</a>&nbsp;
 			<a href="http://www.opera.com/download/" title="下載最新Opera" target="_blank" rel="external">Opera 11↑</a><br />
-			Copyright&copy;2013&nbsp;Some&nbsp;Rights&nbsp;Reserved<br />
+			Copyright&copy;2013-2014&nbsp;Some&nbsp;Rights&nbsp;Reserved<br />
 			Web&nbsp;Design&nbsp;by&nbsp;CSIE&nbsp;Hans
 		</footer>
 	</body>
