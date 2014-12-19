@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+a {
+	text-decoration: none;
+}
+a:visited {
+	color: hsl(240,100%,50%);
+}
+a:hover {
+	text-decoration: underline;
+}
+
+#membertool {
+	text-align: right;
+	padding: 0 2rem;
+	background-color: hsla(240,0%,80%,0.4);
+}
+#membertool form {
+	display: inline;
+}
+#membertool .bt {
+	margin: 0px 5px;
+	font-size: 16px;
+	padding: 6px;
+	width: 42px;
+	height: 31px;
+	border: solid 0px hsl(220,0%,30%);
+	border-radius: 5px;
+}
+#membertool .bt:hover{
+	cursor: pointer;
+	text-decoration: none;
+}
+
+header{
+	text-align: center;
+	height: 24px;
+	padding: 10px;
+	background-color: hsl(120,50%,50%);
+	overflow: hidden;
+	text-shadow:0px 0px 6px hsla(0,0%,100%,0.8);
+	text-shadow:0px 0px 5px hsla(0,0%,30%,0.8);
+
+}
+header h1{
+	letter-spacing: 6px;
+	display: inline;
+	font-size: 150%;
+}
+header h2{
+	line-height: 28px;
+	display: inline;
+	margin-left: 20px;
+	font-size: 120%;
+}
+#search{
+	text-align: center;
+	background-color: hsl(210,70%,80%);
+	padding: 20px;
+}
+#search label{
+	margin: 0px 10px;
+}
+#search form .bt{
+	margin: 0px 5px;
+	font-size: 16px;
+	padding: 6px;
+	background-color: hsla(220,100%,90%,0.3);
+	border: solid 1px hsl(220,0%,30%);
+	border-radius: 5px;
+}
+#search form .bt:hover{
+	cursor: pointer;
+	text-decoration: none;
+	background-color: hsl(220,100%,100%);
+}
+#search form #reset{
+	padding: 7px 9px;
+}
+
+#insert{
+	clear: both;
+	padding: 20px;
+}
+#insert table{
+	margin: 0 auto;
+	text-align: left;
+	border: solid 1px hsl(0,0%,0%);
+}
+#insert table tr:hover{
+	background-color: hsla(0,0%,100%,0.5);
+}
+#insert table tr.directions:hover{
+	background-color: hsla(0,0%,100%,0.5);
+}
+#insert table td{
+	border: solid 1px hsl(0,0%,0%);
+	padding: 4px;
+	vertical-align: middle;
+}
+#insert table input {
+	margin: 5px;
+}
+#insert table select {
+	margin: 5px;
+}
+#insert table input.longInput{
+	width: 300px;
+}
+#insert table input.numInput{
+	text-align: right;
+	width: 60px;
+}
+#insert table input.sortInput{
+	width: 30px;
+}
+
+
+
+
+
+#result{
+	background-color: hsl(190,100%,90%);
+}
+#CT{
+	margin: 0 auto;
+	width: 100%;
+	clear: both;
+	overflow: hidden;
+}
+
+#chose{
+	background-color: hsl(280,80%,90%);
+	width: 200px;
+	margin: 10px 0px;
+	padding: 5px;
+	float: left;
+	border-radius: 10px;
+}
+#chose #function{
+	text-align: center;
+}
+#chose fieldset{
+	padding: 10px;
+	margin: 5px;
+	border: 1px double hsl(0,0%,60%) ;
+	border-radius: 5px;
+}
+#chose fieldset legend{
+	padding: 5px;
+}
+#list {
+	background-color: hsl(200,60%,90%);
+	clear: both;
+	padding: 20px;
+}
+#list table {
+	margin: 0 auto;
+	text-align: center;
+	border: solid 1px hsl(0,0%,0%);
+}
+#list table caption {
+	padding: 0.4rem;
+}
+#list table tr:hover{
+	background-color: hsla(0,0%,100%,0.5);
+}
+#list table tr.directions:hover{
+	background-color: hsla(0,0%,100%,0.5);
+}
+#list table td{
+	border: solid 1px hsl(0,0%,0%);
+	padding: 4px;
+	vertical-align: middle;
+}
+#list table .sort{
+	width: 18px;
+}
+#list table .elec{
+	width: 20px;
+}
+#list table .clas{
+	width: 32px;
+}
+#list table .teac{
+	width: 64px;
+	word-break:keep-all;
+	word-wrap:normal;
+}
+.othe{
+	word-wrap:normal;
+}
+
+footer{
+	letter-spacing: 1px;
+	background-color: hsl(250,100%,90%);
+	font-size: 75%;
+	line-height: 150%;
+	padding: 10px;
+	text-shadow:0px 0px 2px hsla(0,0%,40%,0.4);
+	text-align: center;
+}

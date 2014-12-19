@@ -4,3 +4,5 @@ config.php
 /interface/sn.txt
 /npic_subject-input.sublime-workspace
 /npic_subject-input.sublime-project
+/*.sublime-project
+/*.sublime-workspace
