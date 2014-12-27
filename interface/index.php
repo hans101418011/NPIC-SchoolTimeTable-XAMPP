@@ -1,16 +1,23 @@
+<?php
+session_start(); 
+?>
 <!doctype html>
 <?php
 	include("config.php");
-	if(isset($_GET["department"])){
+
+	$temp = NULL;
+	$institution = NULL;
+	$department = NULL;
+	
+	if($_GET["department"]!=""){
 		$department = $_GET["department"];
 		$temp = explode("-",$department);
 		$institution = $temp[0];
 		$department = $temp[1];
 	}
-	if(isset($_GET["grade"])){
+	if($_GET["grade"]!=""){
 		$grade = $_GET["grade"];
 	}
-
 
 	$q_inst = array(
 		'o' => "產學專班", 
@@ -23,7 +30,7 @@
 		'1' => "103", 
 		'2' => "102", 
 		'3' => "101", 
-		'4' => "100"
+		'4' => "100",
 	);
 	$q_dept = array(
 		'GE' => "通識",
@@ -49,18 +56,22 @@
 		$q_dept['Leisure'] = "休創";
 	}
 
-	
-
 ?>
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>非官方課程查詢系統</title>
-		<link href="reset.css" rel="stylesheet" type="text/css" />
-		<link href="base.css" rel="stylesheet" type="text/css" />
-		<link href="color.css" rel="stylesheet" type="text/css" />
+		<link href="styles/reset.css" rel="stylesheet" type="text/css" />
+		<link href="styles/base.css" rel="stylesheet" type="text/css" />
+		<link href="styles/color.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
 	</head>
 	<body>
+		<div id="membertool">
+			<?php
+				include("_member.php");
+			?>
+		</div>
 		<header>
 			<hgroup>
 				<h1>非官方課程查詢系統</h1>
@@ -68,7 +79,7 @@
 			</hgroup>
 		</header>
 		<div id="search">
-			<form name="search" method="get" action="<?=$_SERVER['self']?>"> <!--
+			<form name="search" method="get" action="<?=$_SERVER['PHP_SELF']?>"> <!--
 				年制
 				<select name="institution">
 					<option>All</option>
@@ -140,13 +151,26 @@
 		</div>
 		<div id="result">
 			<?php
-			if(($_GET["grade"]!="")&&($_GET["department"]!=""))
+			
+
+			if( ( isset($_GET["grade"]) ) && ( isset($_GET["department"]) ) )
 			{
 				include("_class_table.php");
 			}
 			?>
 			<div id="list">
 				<table>
+					<caption><?php
+					if($_GET["query"]==true)
+					{
+						if($institution!="")
+							echo $q_inst[$institution]." ";
+						if(@$grade!="")
+							echo $q_grade[$grade];
+						if($department!="")
+							echo $q_dept[$department];
+					}
+					?></caption>
 					<thead></thead>
 					<tbody>
 						<tr class="directions">
@@ -168,7 +192,7 @@
 							<td>一</td><td>二</td><td>三</td><td>四</td><td>五</td><td>六</td><td>日</td>
 						</tr>
 						<?php
-						if($_GET["query"]==true)
+						if(isset($_GET["query"]))
 						{
 							include("_class_list.php");
 						}

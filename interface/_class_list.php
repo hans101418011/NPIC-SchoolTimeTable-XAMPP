@@ -1,6 +1,5 @@
 <?php
-$sql = 'SELECT * FROM `subject` WHERE `name` NOT LIKE \'%體育%\' AND `institution` LIKE \'%'.$q_inst[$institution].'%\' AND `class` LIKE \'%'.$q_grade[$grade].$q_dept[$department].'%\' LIMIT 0, 30 ';
-echo("<div>".$sql."</div>");
+$sql = 'SELECT * FROM `subject` WHERE `name` NOT LIKE \'%體育%\' AND `institution` LIKE \'%'.$q_inst[$institution].'%\' AND `class` LIKE \'%'.$q_grade[$grade].$q_dept[$department].'%\' LIMIT 0, 200 ';
 $result = mysql_query($sql,$link);
 while($data=mysql_fetch_assoc($result)):
 ?>
@@ -35,8 +34,7 @@ if((102-$q_grade[$grade])<2 && $department!="GE"):
 	{
 		$sql = $sql.'AND `chose` LIKE \'%'.$q_grade[$grade].$q_dept[$department].'%\'';
 	}
-	$sql = $sql.' LIMIT 0, 30 ';
-	echo("<div>".$sql."</div>");
+	$sql = $sql.' LIMIT 0, 200 ';
 	$result = mysql_query($sql,$link);
 	while($data=mysql_fetch_assoc($result)):
 	?>
@@ -66,12 +64,12 @@ if((102-$q_grade[$grade])<2 && $department!="GE"):
 endif;
 
 //通識
-$sql = 'SELECT * FROM `subject` WHERE `name` NOT LIKE \'%體育%\' AND `institution` LIKE \'%'.$q_inst[$institution].'%\' AND  `chose` LIKE \'%'.$q_grade[$grade].$q_dept[$department].'%\' LIMIT 0, 30 ';
+$sql = 'SELECT * FROM `subject` WHERE `name` NOT LIKE \'%體育%\' AND `institution` LIKE \'%'.$q_inst[$institution].'%\' AND  `chose` LIKE \'%'.$q_grade[$grade].$q_dept[$department].'%\' LIMIT 0, 200 ';
 $result = mysql_query($sql,$link);
 while($data=mysql_fetch_assoc($result)):
 ?>
 	<tr>
-		<td class="sort">S<?=$data['sort']?></td>
+		<td class="sort"><?=$data['sort']?></td>
 		<td class="name"><?=$data['name']?></td>
 		<td class="elec"><?=$data['elective']?></td>
 		<td class="cred"><?=$data['credit']?></td>

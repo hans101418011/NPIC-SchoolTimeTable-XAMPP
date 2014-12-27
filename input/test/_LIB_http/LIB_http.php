@@ -80,10 +80,11 @@ Webbot defaults (scope = global)
 ----------------------------------------------------------------------*/
 # Define how your webbot will appear in server logs
 //define("WEBBOT_NAME", "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36");
-define("WEBBOT_NAME", "Mozilla/5.0 (Windows NT 5.1; rv:29.0) Gecko/20100101 Firefox/29.0");
+//define("WEBBOT_NAME", "Mozilla/5.0 (Windows NT 5.1; rv:29.0) Gecko/20100101 Firefox/29.0");
+define("WEBBOT_NAME", "Hans ROBOT");
 
 # Length of time cURL will wait for a response (seconds)
-define("CURL_TIMEOUT", 25);
+define("CURL_TIMEOUT", 3600);
 
 # Location of your cookie file. (Must be fully resolved local address)
 define("COOKIE_FILE", "c:\cookie.txt");

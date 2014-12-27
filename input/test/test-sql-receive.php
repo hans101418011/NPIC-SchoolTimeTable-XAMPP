@@ -10,7 +10,7 @@ else
 {
 	//echo "<p>".$x."<br>".mb_substr($x,10,11,'utf8')."</p>";
 	
-	$input_data_array = array(
+	$IDA = array(
 		"sn"=>$_POST["sn"],
 		"name"=>$_POST["name"],
 		"sort"=>$_POST["sort"],
@@ -39,7 +39,7 @@ else
 	);
 
 
-
+/*
 	$sql = "INSERT INTO `subject` (
 		`sn`, 
 		`name`, 
@@ -63,35 +63,37 @@ else
 		`web`, 
 		`annex`, 
 		`max`, 
-		`limit`, 
+		`limitST`, 
 		`other`, 
 		`chose`
 		) VALUES (
-		'".$input_data_array['sn']."',
-		'".$input_data_array["name"]."',
-		'".$input_data_array['sort']."',
-		'".$input_data_array['elective']."',
-		'".$input_data_array['credit']."',
-		'".$input_data_array["semester"]."',
-		'".$input_data_array["institution"]."',
-		'".$input_data_array["department"]."',
-		'".$input_data_array["class"]."',
-		'".$input_data_array["teacher"]."',
-		'".$input_data_array["monday"]."',
-		'".$input_data_array["tuesday"]."',
-		'".$input_data_array["wednesday"]."',
-		'".$input_data_array["thursday"]."',
-		'".$input_data_array["friday"]."',
-		'".$input_data_array["saturday"]."',
-		'".$input_data_array["sunday"]."',
-		'".$input_data_array["student"]."',
-		'".$input_data_array["room"]."',
-		'".$input_data_array["web"]."',
-		'".$input_data_array["annex"]."',
-		'".$input_data_array["max"]."',
-		'".$input_data_array["limit"]."',
-		'".$input_data_array["other"]."',
-		'".$input_data_array["chose"]."');";
+		'".$IDA['sn']."',
+		'".$IDA["name"]."',
+		'".$IDA['sort']."',
+		'".$IDA['elective']."',
+		'".$IDA['credit']."',
+		'".$IDA["semester"]."',
+		'".$IDA["institution"]."',
+		'".$IDA["department"]."',
+		'".$IDA["class"]."',
+		'".$IDA["teacher"]."',
+		'".$IDA["monday"]."',
+		'".$IDA["tuesday"]."',
+		'".$IDA["wednesday"]."',
+		'".$IDA["thursday"]."',
+		'".$IDA["friday"]."',
+		'".$IDA["saturday"]."',
+		'".$IDA["sunday"]."',
+		'".$IDA["student"]."',
+		'".$IDA["room"]."',
+		'".$IDA["web"]."',
+		'".$IDA["annex"]."',
+		'".$IDA["max"]."',
+		'".$IDA["limit"]."',
+		'".$IDA["other"]."',
+		'".$IDA["chose"]."');";
+*/
+	$sql = "UPDATE `subject` SET `sn`='".$IDA['sn']."',`name`='".$IDA["name"]."',`sort`='".$IDA['sort']."',`elective`='".$IDA['elective']."',`credit`='".$IDA['credit']."',`semester`='".$IDA["semester"]."',`institution`='".$IDA["institution"]."',`department`='".$IDA["department"]."',`class`='".$IDA["class"]."',`teacher`='".$IDA["teacher"]."',`monday`='".$IDA["monday"]."',`tuesday`='".$IDA["tuesday"]."',`wednesday`='".$IDA["wednesday"]."',`thursday`='".$IDA["thursday"]."',`friday`='".$IDA["friday"]."',`saturday`='".$IDA["saturday"]."',`sunday`='".$IDA["sunday"]."',`student`='".$IDA["student"]."',`room`='".$IDA["room"]."',`web`='".$IDA["web"]."',`annex`='".$IDA["annex"]."',`max`='".$IDA["max"]."',`limitST`='".$IDA["limit"]."',`other`='".$IDA["other"]."',`chose`='".$IDA["chose"]."' WHERE 1";
 
 	mysql_query($sql,$link) or die("寫入錯誤!\n".mysql_error()."<br />"); 
 }
