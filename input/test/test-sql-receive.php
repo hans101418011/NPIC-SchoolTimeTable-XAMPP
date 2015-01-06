@@ -39,7 +39,7 @@ else
 	);
 
 
-/*
+
 	$sql = "INSERT INTO `subject` (
 		`sn`, 
 		`name`, 
@@ -91,10 +91,10 @@ else
 		'".$IDA["max"]."',
 		'".$IDA["limit"]."',
 		'".$IDA["other"]."',
-		'".$IDA["chose"]."');";
+		'".$IDA["chose"]."') ON DUPLICATE KEY UPDATE `sn`= '".$IDA['sn']."';";
+/*
+	$sql = "UPDATE `nptu_subject`.`subject` SET `sn` = '$IDA[sn]', `name` = '$IDA[name]', `sort` = '$IDA[sort]', `elective` = '$IDA[elective]', `credit` = '$IDA[credit]', `semester` = '$IDA[semester]', `institution` = '$IDA[institution]', `department` = '$IDA[department]', `class` = '$IDA[class]', `teacher` = '$IDA[teacher]', `monday` = '$IDA[monday]', `tuesday` = '$IDA[tuesday]', `wednesday` = '$IDA[wednesday]', `thursday` = '$IDA[thursday]', `friday` = '$IDA[friday]', `saturday` = '$IDA[saturday]', `sunday` = '$IDA[sunday]', `student` = '$IDA[student]', `room` = '$IDA[room]', `web` = '$IDA[web]', `annex` = '$IDA[annex]', `max` = '$IDA[max]', `limitST` = '$IDA[limit]', `other` = '$IDA[other]', `chose` = '$IDA[chose]' WHERE `subject`.`sn` = '$IDA[sn]';";
 */
-	$sql = "UPDATE `subject` SET `sn`='".$IDA['sn']."',`name`='".$IDA["name"]."',`sort`='".$IDA['sort']."',`elective`='".$IDA['elective']."',`credit`='".$IDA['credit']."',`semester`='".$IDA["semester"]."',`institution`='".$IDA["institution"]."',`department`='".$IDA["department"]."',`class`='".$IDA["class"]."',`teacher`='".$IDA["teacher"]."',`monday`='".$IDA["monday"]."',`tuesday`='".$IDA["tuesday"]."',`wednesday`='".$IDA["wednesday"]."',`thursday`='".$IDA["thursday"]."',`friday`='".$IDA["friday"]."',`saturday`='".$IDA["saturday"]."',`sunday`='".$IDA["sunday"]."',`student`='".$IDA["student"]."',`room`='".$IDA["room"]."',`web`='".$IDA["web"]."',`annex`='".$IDA["annex"]."',`max`='".$IDA["max"]."',`limitST`='".$IDA["limit"]."',`other`='".$IDA["other"]."',`chose`='".$IDA["chose"]."' WHERE 1";
-
 	mysql_query($sql,$link) or die("寫入錯誤!\n".mysql_error()."<br />"); 
 }
 

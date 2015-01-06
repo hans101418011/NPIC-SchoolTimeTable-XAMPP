@@ -4,20 +4,25 @@ if($_GET['logout']==1)
 	destroy_session_and_data();
 	unset($user_id);
 }
-$user_id = "";
+
+$user_id = $_POST['user_id'];
+$user_pw = $_POST['user_pw'];
 if($_POST['login']=='1')
 {
-	$user_id = $_POST['user_id'];
-	$user_pw = $_POST['user_pw'];
-	$sql = "SELECT * FROM `member` WHERE `email` LIKE '".$user_id."' LIMIT 0,1";
-	$result = mysql_query($sql,$link);
-	$memberdata=mysql_fetch_assoc($result);
-	if($memberdata)
+	if($user_id!="")
 	{
-		if(md5($user_pw)==$memberdata['password'])
+		$sql = "SELECT * FROM `member` WHERE `email` LIKE '".$user_id."' LIMIT 0,1";
+		$result = mysql_query($sql,$link);
+		$memberdata = mysql_fetch_assoc($result);
+		if($memberdata)
 		{
-			$_SESSION['login'] = 'success';
-			$_SESSION['user_name'] = $memberdata['name'];
+			if(md5($user_pw)==$memberdata['password'])
+			{
+				$_SESSION['login'] = 'success';
+				$_SESSION['user_name'] = $memberdata['name'];
+			}
+			else
+				echo "login error ";
 		}
 		else
 			echo "login error ";
@@ -25,6 +30,7 @@ if($_POST['login']=='1')
 	else
 		echo "login error ";
 }
+
 
 if($_SESSION['login']=='success')
 {
