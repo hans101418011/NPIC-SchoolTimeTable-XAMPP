@@ -2,11 +2,19 @@
 	<ul>
 		<li><a href="index.php">查詢</a></li>
 	<?php
-		if (1)
+		if($_GET['logout']==1)
 		{
-			echo '<li><a href="myclass.php">紀錄</a></li>';
-			echo '<li><a href="setup.php">設定</a></li>';
-			echo '<li><a href="logout.php">登出</a></li>';
+			destroy_session_and_data();
+			unset($user_id);
+		}
+
+		if($_SESSION['login']=='success')
+		{
+	?>
+			<li><a href="myclass.php">紀錄</a></li>
+			<li><a href="setup.php">設定</a></li>
+	<?php
+			echo '<li><a href="'+$_SERVER['PHP_SELF']+'?logout=1">登入</a></li>';
 		}
 		else
 		{

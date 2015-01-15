@@ -148,9 +148,6 @@ hgroup .pure-g {
 	vertical-align: middle;
 }
 
-
-
-
 #list table td{
 	border: solid 1px hsl(0,0%,0%);
 	padding: 4px;
@@ -158,6 +155,20 @@ hgroup .pure-g {
 
 .othe{
 	word-wrap:normal;
+}
+
+#register {
+	margin: 0 auto;
+	max-width: 320px;
+}
+#register fieldset {
+	max-width: 100%;
+}
+#register .pure-control-group {
+
+}
+#register .pure-control-group label {
+	width: 5rem;
 }
 
 footer{
