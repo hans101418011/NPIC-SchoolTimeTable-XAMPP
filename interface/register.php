@@ -30,26 +30,30 @@
 		<link rel="stylesheet" type="text/css" href="styles/base.css">
 		<link rel="stylesheet" type="text/css" href="styles/color.css">
 		<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery.form.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+		
 	</head>
 	<body>
 		<?php
 			include("_menu.php");
 		?>
 		<div id="register">
-			<form class="pure-form pure-form-aligned" action="<?=$_SERVER['PHP_SELF']?>" method="post" accept-charset="utf-8">
+
+			<form id="registerU" class="pure-form pure-form-aligned" action="<?=$_SERVER['PHP_SELF']?>" method="post" accept-charset="utf-8">
 				<fieldset>
-					<legend>註冊新帳戶</legend>
+					<legend>註冊新帳戶 ps.星號必填！</legend>
 					<div class="pure-control-group">
-						<label for="email">帳戶名</label>
-						<input id="email" type="email" placeholder="學校Email">
+						<label for="email">帳戶名(*)</label>
+						<input id="email" class="email" type="email" placeholder="學校Email">
 					</div>
 					<div class="pure-control-group">
-						<label for="password">密碼</label>
-						<input id="password" type="password" placeholder="Password">
+						<label for="password">密碼(*)</label>
+						<input id="password" class="required" type="password" placeholder="Password">
 					</div>
 					<div class="pure-control-group">
-						<label for="chkpassword">確認密碼</label>
-						<input id="chkpassword" type="password" placeholder="Check Password">
+						<label for="chkpassword">確認密碼(*)</label>
+						<input id="chkpassword" class="equalTo" type="password" placeholder="Check Password">
 					</div>
 					<div class="pure-control-group">
 						<label for="name">暱稱</label>
@@ -70,6 +74,30 @@
 			Copyright&copy;2013-2015&nbsp;Some&nbsp;Rights&nbsp;Reserved<br />
 			Web&nbsp;Design&nbsp;by&nbsp;CSIE&nbsp;Hans
 		</footer>
+		<script type="text/javascript">
+
+		jQuery(function ($) {
+			// highlight
+			var elements = $("input[type!='submit'], textarea, select");
+			elements.focus(function() {
+				$(this).parents('li').addClass('highlight');
+			});
+			elements.blur(function() {
+				$(this).parents('li').removeClass('highlight');
+			});
+
+
+			$("#registerU").validate({
+				rules: {
+					password: "required",
+					password_again: {
+						equalTo: "#password"
+					}
+				}
+			});
+		});
+
+		</script>
 	</body>
 </html>
 <?php

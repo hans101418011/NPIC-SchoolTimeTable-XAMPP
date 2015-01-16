@@ -170,6 +170,10 @@ hgroup .pure-g {
 #register .pure-control-group label {
 	width: 5rem;
 }
+#register label.error {
+	width: 100%;
+	color: hsl(0,80%,60%);
+}
 
 footer{
 	letter-spacing: 1px;
